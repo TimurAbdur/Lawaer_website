@@ -31,7 +31,7 @@
     &__item-img-box {
         position: relative;
     }
-    &__item:hover &__item-img-box::after {
+    &__item:hover &__item-img-box::after, &__item:hover &__item-img-box::before {
         opacity: 1;
     }
     &__item:hover &__item-title {
@@ -39,6 +39,20 @@
     }
     &__item-img {
         margin-bottom: 24px;
+    }
+    &__item-img-box::before{
+        transition: 0.2s ease-in-out;
+        content: '';
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        left: calc(50% - 20px);
+        top: calc(50% - 20px);
+        display: block;
+        z-index: 2;
+        border-radius: 50%;
+        background: url('../imgs/add-hocer.png');
+        opacity: 0;
     }
     &__item-img-box::after {
         transition: 0.2s ease-in-out;
@@ -49,7 +63,9 @@
         width: 100%;
         height: 100%;
         display: block;
-        background-color: #4f8ff071;
+        background: url('../imgs/hover-border.png') no-repeat;
+        background-position: center center;
+        background-size: cover;
         opacity: 0;
     }
     // .additionally__item-title

@@ -1,0 +1,113 @@
+.footer {
+    background-color: black;
+    // .footer__wrapper
+    &__wrapper {
+        background-color: #222222;
+        padding: 80px 0;
+    }
+    // .footer__top
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 48px;
+        margin-bottom: 48px;
+        border-bottom: 1px solid #8C8C8C;
+    }
+    // .footer__content
+    &__content {
+        display: flex;
+    }
+    // .footer__contacts-item
+    &__contacts-item {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+    }
+    &__contacts-item + &__contacts-item {
+        margin-top: 24px;
+    }
+    // .footer__contacts-text
+    &__contacts-text {
+        color: #8C8C8C;
+    }
+    // .footer__contacts-addres
+    &__contacts-addres {
+        font-size: 16px;
+        color: #ffffff;
+    }
+    // .footer__nav
+    &__nav {
+        margin-left: auto;
+        flex-basis: 312px;
+    }
+    // .footer__nav-item
+    &__nav-item + &__nav-item {
+        margin-top: 16px;
+    }
+    // .footer__nav-link
+    &__nav-link {
+        font-size: 14px;
+        color: #fff;
+        transition: 0.15s ease-in;
+    }
+    &__nav-link:hover {
+        color: $accent-color;
+    }
+    &__lawaer {
+        flex-basis: 424px;
+        margin-left: 24px;
+    }
+    // .footer__lawaer-text
+    &__lawaer-text {
+        margin-bottom: 24px;
+        line-height: 1.5;
+        font-size: 16px;
+        color: #fff;
+    }
+    // .foooter__lawaer
+    &__lawaer {
+    }
+    // .foooter__lawaer-info
+    &__lawaer-info {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+        margin-bottom: 16px;
+    }
+
+    // .foooter__lawaer-fullname
+    &__lawaer-fullname {
+        color: #fff;
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+    // .foooter__lawaer-job-title
+    &__lawaer-job-title {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    // .footer__top-text
+    &__top-text {
+        font-size: 16px;
+        max-width: 862px;
+        color: #F8F5F4;
+    }
+    // .footer__copyright
+    &__copyright {
+        padding: 16px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 8px 30px;
+    }
+    // .footer__copyright-text
+    &__copyright-text {
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+    }
+}

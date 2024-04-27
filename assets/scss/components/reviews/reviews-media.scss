@@ -43,6 +43,22 @@
 
 @media (max-width: 425px) {
     .reviews {
+        &__item {
+            padding: 24px;
+        }
+        &__user-img {
+            height: 50px;
+            width: 50px;
+        }
+        &__user-full-name {
+            font-size: 16px;
+        }
+        &__user-info {
+            column-gap: 16px;
+        }
+        &__feather-img {
+            display: none;
+        }
         // .reviews__button-wrapper
     &__button-wrapper {
         display: flex;

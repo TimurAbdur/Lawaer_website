@@ -51,5 +51,17 @@
             width: 25px;
             height: 25px;   
         }
+        &__items::-webkit-scrollbar {
+            height: 10px;
+        }
+        
+        &__items::-webkit-scrollbar-track {
+            background-color: #f1f1f1; /* цвет фона полосы */
+        }
+        
+        &__items::-webkit-scrollbar-thumb {
+            background-color: #ccc; /* цвет ползунка */
+            border-radius: 5px; /* скругление углов ползунка */
+        }
     }
 }
