@@ -28,8 +28,8 @@
     }
     // .header__contacts-phone
     &__contacts-phone::before {
+        background: url('../imgs/hedaer-phone.svg');
         @extend %contacts-info;
-        background: url('../imgs/phone.svg');
     }
     // .header__contacts-email
     &__contacts-email::before {

@@ -208,7 +208,7 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
 }
 .header__contacts-phone::before {
-  background: url("../imgs/phone.svg");
+  background: url("../imgs/hedaer-phone.svg");
 }
 .header__contacts-email::before {
   background: url("../imgs/mail.svg");
