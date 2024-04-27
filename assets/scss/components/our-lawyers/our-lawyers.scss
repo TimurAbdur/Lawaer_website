@@ -1,0 +1,78 @@
+.our-lawyers {
+    padding: 80px 0;
+    background-color: #F7F7F7;
+    // .our-lawyers__title-wrapper
+    &__title-wrapper {
+        text-align: center;
+    }
+    // .our-lawyers__text
+    &__text {
+        max-width: 920px;
+        text-align: center;
+        font-size: 16px;
+        margin: 0 auto;
+        margin-bottom: 48px;
+    }
+    // .our-lawyers__items
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 24px;
+        justify-content: space-between;
+    }
+    // .our-lawyers__item
+    &__item {
+        cursor: pointer;
+        position: relative;
+        background-color: #fff;
+        flex-shrink: 0;
+        flex-basis: 312px;
+        box-shadow: 0 2px 4px rgb(0, 0, 0, 0.25);
+        
+        overflow-y: hidden;
+    }
+    &__item-text-wrapper {
+        text-align: center;
+        padding: 24px 5px;
+    }
+    // .our-lawyers__full-name-text
+    &__full-name-text {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    // .our-lawyers__job-title
+    &__job-title {
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &__item-info {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: #ffffff;
+        transform: translateY(100%);
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    &__item:hover &__item-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    &__item-info-text-wrapper {
+        text-align: center;
+        padding: 84px 20px;
+    }
+    &__info-text {
+        margin: 40px 0;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &__info-experience {
+        font-size: 16px;
+        font-weight: 700;
+    }
+}

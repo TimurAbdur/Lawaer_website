@@ -1,0 +1,71 @@
+.reviews {
+    padding: 80px 0;
+    background: url('../imgs/reviews-bg.jpg') no-repeat center / cover;
+    // .reviews__top
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        margin-bottom: 48px;
+    }
+    // .reviews__items
+    &__items {
+        display: flex;
+        column-gap: 24px;
+        margin-bottom: 32px;
+    }
+    // .reviews__item
+    &__item {
+        background-color: #fff;
+        padding: 32px;
+        box-shadow: 2px 2px 10px 0 #21212142;
+    }
+    // .reviews__item-top
+    &__item-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    // .reviews__user-info
+    &__user-info {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+    }
+    &__user-text {
+        p:nth-child(1) {
+            margin-bottom: 4px;
+        }
+    }
+    // .reviews__user-full-name
+    &__user-full-name {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    // .reviews__feather-img
+    // .reviews__text
+    &__text {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    // .reviews__button-wrapper
+    &__button-wrapper {
+        display: flex;
+        column-gap: 24px;
+    }
+
+    &__items::-webkit-scrollbar {
+        height: 10px;
+    }
+    
+    &__items::-webkit-scrollbar-track {
+        background-color: #f1f1f1; /* цвет фона полосы */
+    }
+    
+    &__items::-webkit-scrollbar-thumb {
+        background-color: #ccc; /* цвет ползунка */
+        border-radius: 5px; /* скругление углов ползунка */
+    }
+}

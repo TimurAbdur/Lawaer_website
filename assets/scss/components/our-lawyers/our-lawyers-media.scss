@@ -1,0 +1,58 @@
+@media (max-width: 990px) {
+    .our-lawyers {
+        padding: 60px 0;
+        // .our-lawyers__text
+        &__text {
+            max-width: 696px;
+        }
+        &__item {
+            flex-basis: 300px;
+        }
+        &__items {
+            padding: 1px;
+            display: flex;
+            overflow-x: auto;
+            padding-bottom: 8px;
+        }
+        &__items::-webkit-scrollbar {
+            height: 10px;
+        }
+        
+        &__items::-webkit-scrollbar-track {
+            background-color: #f1f1f1; /* цвет фона полосы */
+        }
+        
+        &__items::-webkit-scrollbar-thumb {
+            background-color: #ccc; /* цвет ползунка */
+            border-radius: 5px; /* скругление углов ползунка */
+        }
+    }
+    
+}
+
+@media (max-width: 450px) {
+    .our-lawyers {
+        padding: 40px 0;
+        // .our-lawyers__text
+        &__text {
+            max-width: 696px;
+        }
+        &__item {
+            flex-basis: 235px;
+            height: 348px;
+        }
+        &__item-info-text-wrapper {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        &__info-text {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        &__info-experience {
+            font-size: 12px;
+            font-weight: 700;
+        }
+    }
+    
+}

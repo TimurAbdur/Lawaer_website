@@ -1,0 +1,34 @@
+.banner {
+    margin-top: 52px;
+    height: 820px;
+    background: url('../imgs/header-background.jpg') no-repeat center / cover;
+    // .banner__inner
+    &__inner {
+        padding-top: 260px;
+        text-align: center;
+    }
+    // .banner__title
+    &__title {
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 300;
+        color: #fff;
+        margin-bottom: 8px;
+    }
+    // .banner__title-primary
+    &__title-primary {
+        color: $accent-color;
+        margin-top: 8px;
+        font-size: 56px;
+        font-weight: 800;
+        display: block;
+    }
+    // .banner__text
+    &__text {
+        max-width: 1090px;
+        font-size: 20px;
+        color: #fff;
+        margin: 0 auto;
+        margin-bottom: 48px;
+    }
+}

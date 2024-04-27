@@ -1,0 +1,131 @@
+html, body {
+    font-family: "Nunito Sans", sans-serif;
+    color: #222222;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.2;
+} 
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* цвет фона полосы */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* цвет ползунка */
+    border-radius: 5px; /* скругление углов ползунка */
+}
+
+.container {
+    max-width: 1350px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    // .logo__primary-text
+    &__primary-text {
+        text-transform: uppercase;
+        font-size: 28px;
+        color: #4F8FF0;
+    }
+}
+
+.button {
+    font-family: "Nunito Sans", sans-serif;
+    padding: 16px 24px;
+    background-color: $accent-color;
+    font-weight: 900;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out background-color;
+}
+.button:hover {
+    padding: 14px 22px;
+    background-color: #fff;
+    border: 2px solid $accent-color;
+    color: $accent-color;
+}
+
+.button--center {
+    margin: 0 auto;
+}
+
+.button-2 {
+    font-family: "Nunito Sans", sans-serif;
+    padding: 16px 24px;
+    background-color: #E6E6E6;
+    font-weight: 900;
+    cursor: pointer;
+    color: #000;
+    font-size: 14px;
+    transition: 0.2s ease-in-out background-color;
+}
+.button-2:hover {
+    padding: 14px 22px;
+    background-color: #fff;
+    border: 2px solid #E6E6E6;
+}
+
+
+.common-title {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 37px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.common-title--primary-text {
+    color: $accent-color;
+}
+
+.common-title::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    bottom: -10px;
+    left: calc(50% - 25px);
+    background-color: $accent-color;
+}
+
+.common-title--long {
+    text-align: left;
+}
+.common-title--long::before {
+    left: 0;
+}
+
+@media (max-width: 990px) {
+    .container {
+        max-width: 696px;
+    }    
+    .logo {
+        font-size: 15px;
+        // .logo__primary-text
+        &__primary-text {
+            font-size: 22px;
+        }
+    }
+
+    .common-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 450px) {
+    .common-title {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,94 @@
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    // .header__contacts-wrapper
+    &__contacts-wrapper {
+        height: 52px;
+        background-color: #000;
+    }
+    &__contacts-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20px;
+        height: 52px;
+    }
+    // .header__contacts
+    &__contacts {
+        display: flex;
+        column-gap: 20px;
+    }
+    &__contacts-phone, &__contacts-email {
+        position: relative;
+        padding-left: 28px;
+        color: #fff;
+    }
+    // .header__contacts-phone
+    &__contacts-phone::before {
+        @extend %contacts-info;
+        background: url('../imgs/phone.svg');
+    }
+    // .header__contacts-email
+    &__contacts-email::before {
+        @extend %contacts-info;
+        background: url('../imgs/mail.svg');
+    }
+    // .header__request-call-link
+    &__request-call-link {
+        font-weight: bold;
+        color: $accent-color;
+    }
+    // .header__nav-wrapper
+    &__nav-wrapper {
+        padding: 20px 0 28px;
+        background-color: #010101c9;
+    }
+    &__nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    // .header__nav
+    &__burger-btn {
+        display: none;
+        cursor: pointer;
+    }
+    &__close-btn {
+        display: none;
+        cursor: pointer;
+    }
+    // .header__nav-list
+    &__nav-list {
+        display: flex;
+        column-gap: 32px;
+    }
+    // .header__nav-link
+    &__nav-link {
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        transition: 0.15s ease-in-out;
+        position: relative;
+    }
+    &__nav-link:hover {
+        color: $accent-color;
+    }
+    &__nav-link::after {
+        content: "";
+        width: 100%;
+        left: 0;
+        bottom: 2px;
+        height: 1px;
+        background-color: $accent-color;
+        position: absolute;
+        transform: scale(0);
+        transition: 0.2s;
+    }
+    
+    &__nav-link:hover::after{
+        transform: scale(1);
+    }
+}

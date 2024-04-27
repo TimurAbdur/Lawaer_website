@@ -1,0 +1,34 @@
+@media (max-width: 1024px) {
+    .about {
+        padding: 60px 0;
+        // .about__wrapper
+        &__wrapper {
+            column-gap: 0px;
+        }
+        // .about__img
+        &__img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .about {
+        padding: 40px 0;
+        // .about__text
+        &__text {
+            font-size: 14px;
+        }
+
+        // .about__button-wrapper
+        &__button-wrapper {
+            flex-direction: column;
+            row-gap: 24px;
+            align-items: center;
+        }
+        // .about__img
+        &__img {
+            display: none;
+        }
+    }
+}

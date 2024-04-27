@@ -1,0 +1,30 @@
+.about {
+    padding: 80px 0;
+    // .about__wrapper
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 64px;
+    }
+    // .about__text
+    &__text {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    &__text + &__text {
+        margin-top: 22px;
+    }
+
+    // .about__button-wrapper
+    &__button-wrapper {
+        margin-top: 32px;
+        display: flex;
+        column-gap: 24px;
+    }
+    // .about__img
+    &__img {
+        flex-basis: 535px;
+        height: auto;
+        flex-shrink: 0;
+    }
+}
